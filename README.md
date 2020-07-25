@@ -1,13 +1,12 @@
-# K2 TypeScript Broker Template
+# K2 Nexus Javascript Broker for Twilio
 
-This is demonstrates best-practices for developing a K2 Broker using TypeScript.
+A JSSP based Twilio connector for K2 Nexus.
 
 # Features
 
-  - Full object model intellisense for making development easier
-  - Sample broker code that accesses jsonplaceholder.
-  - Sample unit tests with mocks and code coverage.
-  - RollupJS configuration for TypeScript.
+  - Developed using the new K2 Javascript Service Provider (JSSP) connector.
+  - Interact with Twilio's Programmable SMS REST API through K2 SmartObjects.
+  - Send SMS from K2 SmartForms and K2 Workflows.
 
 ## Getting Started
 
@@ -23,19 +22,7 @@ See the documentation for [@k2oss/k2-broker-core](https://www.npmjs.com/package/
 for more information about how to use the broker SDK package.
 
 ## Running Unit Tests
-To run the unit tests, run:
-
-```bash
-npm test
-```
-
-You can also use a development build, for debugging and coverage gutters:
-
-```bash
-npm run test:dev
-```
-
-You will find the code coverage results in [coverage/index.html](./coverage/index.html).
+Coming soon.
 
 ## Building your bundled JS
 When you're ready to build your broker, run the following command
