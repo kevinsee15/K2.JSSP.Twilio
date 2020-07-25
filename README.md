@@ -21,9 +21,6 @@ npm install
 See the documentation for [@k2oss/k2-broker-core](https://www.npmjs.com/package/@k2oss/k2-broker-core)
 for more information about how to use the broker SDK package.
 
-## Running Unit Tests
-Coming soon.
-
 ## Building your bundled JS
 When you're ready to build your broker, run the following command
 
@@ -38,6 +35,14 @@ Once you have a bundled .js file, upload it to your repository (anonymously
 accessible) and register the service type using the system SmartObject located
 at System > Management > SmartObjects > SmartObjects > JavaScript Service
 Provider and run the Create From URL method.
+
+## Configuring the Twilio Javascript Broker
+
+1. Create a service instance with the service type you just created.
+2. Set the "Authentication Mode" to "Static" and provide your Twilio Account ID as the "User Name", and your Twilio Auth Key as the "Password".
+3. Set the "Authorization Header Format" to "Basic {0}:{1}".
+4. Set the "Encode Authorization Header" to "true".
+5. Provide your "Account ID" and "Default From". If the "Default From" is left empty, you must indicate a value for the SmartObject property "From".
 
 ### License
 
